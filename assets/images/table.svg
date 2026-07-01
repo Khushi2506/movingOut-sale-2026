@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650">
+<rect width="900" height="650" fill="#fef3c7"/>
+<circle cx="725" cy="110" r="150" fill="white" opacity="0.45"/>
+<circle cx="130" cy="560" r="210" fill="white" opacity="0.35"/>
+<text x="450" y="295" text-anchor="middle" font-size="128">🍽️</text>
+<text x="450" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="52" font-weight="800" fill="#92400e">Dining Table</text>
+<text x="450" y="462" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#92400e" opacity="0.7">Replace this placeholder with your photo</text>
+</svg>

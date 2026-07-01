@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moving Sale 2026</title>
+  <meta name="description" content="Moving sale catalog with furniture, kitchen, electronics, kids items, and home goods." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <a class="brand" href="#">Moving Sale 2026</a>
+      <div class="nav-actions">
+        <button id="themeToggle" class="ghost" type="button">🌙</button>
+        <a class="contact-link" href="mailto:your-email@example.com?subject=Moving%20Sale%20Inquiry">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero-content">
+      <p class="eyebrow">Bay Area pickup • Cash / Zelle / Venmo</p>
+      <h1>Furniture, kitchen, toys, electronics & home items</h1>
+      <p class="subtitle">Browse available items, filter by category, search by name, and message us with the item title.</p>
+      <div class="hero-buttons">
+        <a class="primary" href="#catalog">View items</a>
+        <a class="secondary" href="mailto:your-email@example.com?subject=Moving%20Sale%20Inquiry">Ask a question</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="stats" aria-label="Sale statistics">
+      <div><strong id="totalCount">0</strong><span>Total</span></div>
+      <div><strong id="availableCount">0</strong><span>Available</span></div>
+      <div><strong id="soldCount">0</strong><span>Sold</span></div>
+    </section>
+
+    <section class="toolbar" id="catalog">
+      <div class="search-box">
+        <span>🔎</span>
+        <input id="searchInput" type="search" placeholder="Search sofa, table, toys..." />
+      </div>
+      <select id="sortSelect" aria-label="Sort items">
+        <option value="featured">Featured</option>
+        <option value="priceLow">Price: low to high</option>
+        <option value="priceHigh">Price: high to low</option>
+        <option value="available">Available first</option>
+      </select>
+    </section>
+
+    <section id="filters" class="filters" aria-label="Category filters"></section>
+    <section id="itemsGrid" class="items-grid" aria-live="polite"></section>
+    <p id="emptyState" class="empty hidden">No items match your search.</p>
+  </main>
+
+  <dialog id="itemDialog" class="modal">
+    <button id="closeDialog" class="modal-close" type="button" aria-label="Close">×</button>
+    <div id="modalContent"></div>
+  </dialog>
+
+  <footer>
+    <p>Update prices and items in <code>items.js</code>. Replace placeholder images in <code>assets/images/</code>.</p>
+  </footer>
+
+  <script src="items.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
