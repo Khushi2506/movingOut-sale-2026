@@ -33,7 +33,7 @@ const SALE_ITEMS = [
     originalPrice: 120,
     condition: "Used",
     status: "Sold",
-    image: "assets/images/coffee.svg",
+    image: "assets/images/IMG_3631.jpeg",
     description: "Works well. Clean and ready to use.",
     pickup: "Cupertino / Bay Area",
     reference: ""
